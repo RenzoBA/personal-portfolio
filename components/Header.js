@@ -14,10 +14,10 @@ const Header = ({ socials }) => {
       >
         <div className="flex flex-col md:flex-row gap-5">
           <a href={socials[0].url} target="_blank" rel="noreferrer">
-            <BsLinkedin className="header-icon" />
+            <BsGithub className="header-icon" />
           </a>
           <a href={socials[1].url} target="_blank" rel="noreferrer">
-            <BsGithub className="header-icon" />
+            <BsLinkedin className="header-icon" />
           </a>
         </div>
         <button className="gap-2 flex ml-auto items-center group">

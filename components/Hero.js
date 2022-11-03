@@ -18,8 +18,11 @@ const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
   return (
     <div className="relative top-8 flex flex-col h-screen justify-center items-center text-center space-y-6 sm:space-y-8 py-16 lg:py-0">
       <BackgroundShapes />
+      {/* <div className="w-full absolute top-[24%] bg-color-custom-2 left-0 h-[500px] skew-y-12 z-0" />
+      <div className="w-full absolute top-[24%] bg-color-custom-2 left-0 h-[500px] -skew-y-12 -z-0" /> */}
+
       <Image
-        className="rounded-full object-cover"
+        className="rounded-full object-cover z-0"
         src={urlFor(profilePhoto).url()}
         alt="profile-photo"
         width={120}
@@ -40,10 +43,10 @@ const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
         }}
         className="z-10 flex flex-col items-center"
       >
-        <h2 className="text-xs sm:text-sm uppercase text-color-custom-2 pb-2 tracking-[15px]">
+        <h2 className="text-xs sm:text-lg uppercase text-color-custom pb-2 tracking-[15px]">
           {role}
         </h2>
-        <h1 className="text-color-custom text-3xl sm:text-5xl lg:text-6xl font-semibold">
+        <h1 className="text-[#f1f15d] text-3xl sm:text-5xl lg:text-6xl font-semibold">
           {text} <Cursor cursorColor="#f1f15d" />
         </h1>
         <div className="pt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:gap-5 sm:flex">

@@ -17,9 +17,9 @@ const Contact = ({ pageInfo }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col h-full md:h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center py-16 pb-32 md:py-0 text-color-custom"
+      className="relative flex flex-col h-full md:h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center py-16 pb-36 md:py-0 text-color-custom"
     >
-      <h3 className="md:absolute top-16 uppercase tracking-[20px] text-color-custom-2 text-2xl">
+      <h3 className="md:absolute top-16 uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         Contact
       </h3>
       <div className="flex flex-col space-y-10 mt-10">
@@ -30,7 +30,9 @@ const Contact = ({ pageInfo }) => {
         <div className="space-y-6">
           <div className="contact-info">
             <FiMail className="contact-icon" />
-            <p className="text-xl sm:text-2xl">{pageInfo.email}</p>
+            <p className="text-xl sm:text-2xl select-element">
+              {pageInfo.email}
+            </p>
           </div>
           <div className="contact-info">
             <FiMapPin className="contact-icon" />

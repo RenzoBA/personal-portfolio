@@ -26,15 +26,16 @@ const Project = ({
       <div className="space-y-6 px-0 flex flex-col items-center">
         <div className="text-center">
           <h5 className="text-2xl underline decoration-element">
-            Project {position} of {length}:<br />
+            Project {position} of {length}
+            <br />
           </h5>{" "}
           <a href={linkToBuild} target="_blank" rel="noreferrer">
-            <h4 className="text-3xl font-semibold tracking-[8px] uppercase animate-pulse">
+            <h4 className="text-3xl md:text-3xl tracking-[8px] uppercase">
               {title}
             </h4>
           </a>
         </div>
-        <p className="text-sm xl:text-base">{summary}</p>
+        <p className="text-base lg:text-lg">{summary}</p>
         <div className="flex gap-5">
           {technologies.map((technology) => (
             <SkillMin key={technology._id} technology={technology} />

@@ -2,13 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select-element {
+  -webkit-touch-callout: default;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 @layer components {
   .text-color-custom {
     @apply text-[#f5f5f5];
   }
 
   .text-color-custom-2 {
-    @apply text-[#f5f5f5]/20;
+    @apply text-[#f5f5f5]/40;
+  }
+
+  .section-title,
+  .hero-button-text {
+    @apply text-[#f1f15d] animate-pulse font-semibold;
   }
 
   .decoration-element {
@@ -20,7 +41,7 @@
   }
 
   .bg-color-custom-2 {
-    @apply bg-[#bbe26a]/20;
+    @apply bg-[#202020]/20;
   }
 
   .bg-skill-custom {
@@ -44,7 +65,7 @@
   }
 
   .hero-button {
-    @apply px-6 py-2 w-32 lg:w-40 rounded-full uppercase text-sm lg:text-lg tracking-widest text-color-custom-2 transition-all  sm:hover:text-color-custom shadow-md;
+    @apply px-6 py-2 w-32 lg:w-40 rounded-full uppercase text-base lg:text-xl tracking-widest text-[#f5f5f5] transition-all  sm:hover:hero-button-text;
   }
 
   .contact-info {
