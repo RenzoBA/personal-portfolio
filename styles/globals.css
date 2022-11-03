@@ -2,11 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.root {
+  background-color: aqua;
+}
+
 @layer components {
-  .devButton {
-    @apply px-6 py-2 border border-[rgb(50,50,50)] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all hover:border-[#b0ff5d];
+  .dev-button {
+    @apply px-6 py-2 w-32 lg:w-40 border border-[rgb(50,50,50)] rounded-full uppercase text-sm lg:text-lg tracking-widest text-gray-500 transition-all  hover:text-white hover:bg-[#555555];
   }
-  .contactInput {
+  .contact-input {
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-400/10 placeholder-gray-500 transition-all hover:border-slate-400/40 focus:border-[#b1ff5d78] focus:text-[#b0ff5d]/40;
+  }
+  .animate-shape {
+    @apply absolute border-2 border-[#555555] rounded-full;
+  }
+
+  .contact-info {
+    @apply flex flex-col sm:flex-row justify-center items-center gap-1 sm:gap-5;
+  }
+  .contact-icon {
+    @apply text-[#b0ff5d] h-7 w-7 animate-pulse;
   }
 }

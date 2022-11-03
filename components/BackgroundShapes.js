@@ -16,10 +16,11 @@ const BackgroundShapes = () => {
       }}
       className="relative flex justify-center items-center"
     >
-      <div className=" absolute border-2 border-[#555555] opacity-60 rounded-full h-[560px] w-[575px] mt-52 animate-spin" />
-      <div className=" absolute border-2 border-[#555555] opacity-60 rounded-full h-[575px] w-[560px] mt-52 animate-spin" />
-      <div className=" absolute border-2 border-[#555555] opacity-10 rounded-full h-[495px] w-[480px] mt-52 animate-spin" />
-      <div className=" absolute border-2 border-[#555555] opacity-10 rounded-full h-[480px] w-[495px] mt-52 animate-spin" />
+      <div className="animate-shape opacity-20 h-[120px] w-[120px] mt-[11.5rem] animate-ping" />
+      <div className="animate-shape opacity-60 h-[560px] w-[575px] mt-52 animate-spin" />
+      <div className="animate-shape opacity-60 h-[575px] w-[560px] mt-52 animate-spin" />
+      <div className="animate-shape opacity-10 h-[495px] w-[480px] mt-52 animate-spin" />
+      <div className="animate-shape opacity-10 h-[480px] w-[495px] mt-52 animate-spin" />
     </motion.div>
   );
 };

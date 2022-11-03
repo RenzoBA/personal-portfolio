@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 //components
-import BackgroundShapes from "../components/BackgroundShapes";
+import BackgroundShapes from "./BackgroundShapes";
 
 //sanity
 import { urlFor } from "../sanity";
@@ -15,10 +15,10 @@ const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
     delaySpeed: 1500,
   });
   return (
-    <div className="relative flex flex-col space-y-8 justify-center items-center h-screen">
+    <div className="relative top-14 flex flex-col h-screen justify-center items-center text-center space-y-6 sm:space-y-8 py-16 lg:py-0">
       <BackgroundShapes />
       <img
-        className="relative rounded-full mx-auto object-cover"
+        className="rounded-full object-cover"
         src={urlFor(profilePhoto).url()}
         alt="profile-photo"
         width={120}
@@ -37,28 +37,26 @@ const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
           ease: "easeInOut",
           duration: 0.5,
         }}
-        className="z-1 flex flex-col items-center"
+        className="z-10 flex flex-col items-center"
       >
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="text-xs sm:text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           {role}
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
-          <span className="mr-3">
-            {text} <Cursor cursorColor="#b0ff5d" />
-          </span>
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold">
+          {text} <Cursor cursorColor="#b0ff5d" />
         </h1>
-        <div className="pt-5 space-x-2 z-20">
+        <div className="pt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:gap-5 sm:flex">
           <Link href="#about">
-            <button className="devButton">About</button>
+            <button className="dev-button">About</button>
           </Link>
           <Link href="#skills">
-            <button className="devButton">Skills</button>
+            <button className="dev-button">Skills</button>
           </Link>
           <Link href="#projects">
-            <button className="devButton">Projects</button>
+            <button className="dev-button">Projects</button>
           </Link>
           <Link href="#contact">
-            <button className="devButton">Contact</button>
+            <button className="dev-button">Contact</button>
           </Link>
         </div>
       </motion.div>

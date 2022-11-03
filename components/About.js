@@ -13,9 +13,9 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative h-screen text-center max-w-7xl px-10 justify-evenly items-center mx-auto md:text-left md:flex-row"
+      className="relative flex flex-col md:flex-row h-full md:h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center md:text-left py-16 md:py-0"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="md:absolute top-16 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
       <motion.img
@@ -29,15 +29,15 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         src={urlFor(aboutPhoto).url()}
-        className="-mb-28 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[350px] xl:h-[450px]"
+        className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[350px] xl:h-[450px] m-10"
       />
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="space-y-6">
+        <h4 className="text-4xl xl:text-5xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#b0ff5d]">little</span>{" "}
           background
         </h4>
-        <p className="text-sm">{aboutInformation}</p>
+        <p className="text-sm xl:text-base xl:w-11/12">{aboutInformation}</p>
       </div>
     </motion.div>
   );
