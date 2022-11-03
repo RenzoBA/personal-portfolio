@@ -20,12 +20,12 @@ const Project = ({
           transition={{ duration: 1.5, ease: "easeOut" }}
           src={urlFor(image).url()}
           alt="project-image"
-          className="flex-shrink-0 object-cover h-32 md:h-44"
+          className="flex-shrink-0 object-cover h-40 md:h-52"
         />
       </a>
       <div className="space-y-6 px-0 flex flex-col items-center">
         <div className="text-center">
-          <h5 className="text-2xl underline decoration-[#b0ff5d]">
+          <h5 className="text-2xl underline decoration-element">
             Project {position} of {length}:<br />
           </h5>{" "}
           <a href={linkToBuild} target="_blank" rel="noreferrer">

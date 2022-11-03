@@ -15,7 +15,7 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col md:flex-row h-full md:h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center md:text-left py-16 md:py-0"
     >
-      <h3 className="md:absolute top-16 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="md:absolute top-16 uppercase tracking-[20px] text-color-custom-2 text-2xl">
         About
       </h3>
       <motion.img
@@ -31,10 +31,9 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
         src={urlFor(aboutPhoto).url()}
         className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[350px] xl:h-[450px] m-10"
       />
-      <div className="space-y-6">
+      <div className="space-y-6 text-color-custom">
         <h4 className="text-4xl xl:text-5xl font-semibold">
-          Here is a{" "}
-          <span className="underline decoration-[#b0ff5d]">little</span>{" "}
+          Here is a <span className="underline decoration-element">little</span>{" "}
           background
         </h4>
         <p className="text-sm xl:text-base xl:w-11/12">{aboutInformation}</p>

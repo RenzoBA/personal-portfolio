@@ -13,13 +13,13 @@ const Projects = ({ projects }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col h-full md:h-screen max-w-full mx-auto justify-center items-center text-center py-16 md:py-0"
+      className="relative flex flex-col h-full md:h-screen max-w-full mx-auto justify-center items-center text-center py-16 md:py-0 text-color-custom"
     >
-      <div className="w-full absolute top-[30%] bg-[#b1ff5d78]/10 left-0 h-[500px] -skew-y-12" />
-      <h3 className="md:absolute top-16 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <div className="w-full absolute top-[30%] bg-color-custom-2 left-0 h-[500px] -skew-y-12" />
+      <h3 className="md:absolute top-16 uppercase tracking-[20px] text-color-custom-2 text-2xl">
         Projects
       </h3>
-      <div className="w-full h-full flex snap-x snap-mandatory z-10 overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-thumb-[#b0ff5d]">
+      <div className="w-full h-full flex snap-x snap-mandatory z-10 overflow-x-scroll overflow-y-hidden scroll-color-custom">
         {projects.map((project, i) => (
           <Project
             project={project}

@@ -14,15 +14,17 @@ const Header = ({ socials }) => {
       >
         <div className="flex flex-col md:flex-row gap-5">
           <a href={socials[0].url} target="_blank" rel="noreferrer">
-            <BsLinkedin className="cursor-pointer hover:text-[#b0ff5d] transition-all" />
+            <BsLinkedin className="header-icon" />
           </a>
           <a href={socials[1].url} target="_blank" rel="noreferrer">
-            <BsGithub className="cursor-pointer hover:text-[#b0ff5d] transition-all" />
+            <BsGithub className="header-icon" />
           </a>
         </div>
-        <button className="gap-2 flex ml-auto items-center hover:text-[#b0ff5d] transition-all">
-          <BsDownload />
-          <p className="hidden md:inline-flex text-sm">PDF version</p>
+        <button className="gap-2 flex ml-auto items-center group">
+          <BsDownload className="header-icon" />
+          <p className="hidden md:inline-flex items-center text-sm header-icon w-20">
+            PDF version
+          </p>
         </button>
       </motion.div>
     </header>
