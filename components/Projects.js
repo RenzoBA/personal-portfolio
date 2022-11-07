@@ -13,10 +13,10 @@ const Projects = ({ projects }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col h-full md:h-screen max-w-full mx-auto justify-center items-center text-center py-16 md:py-0 text-color-custom"
+      className="relative flex flex-col h-full md:h-screen max-w-full mx-auto justify-start items-center text-center pt-28 pb-20 md:py-0 text-color-custom"
     >
       <div className="w-full absolute top-[30%] bg-color-custom-2 left-0 h-[500px] -skew-y-12" />
-      <h3 className="md:absolute top-16 uppercase tracking-[20px] section-title text-2xl md:text-3xl">
+      <h3 className="absolute top-16 uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         Projects
       </h3>
       <div className="w-full h-full flex snap-x snap-mandatory z-10 overflow-x-scroll overflow-y-hidden scroll-color-custom">

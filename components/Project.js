@@ -12,7 +12,7 @@ const Project = ({
   project: { title, summary, image, technologies, linkToBuild },
 }) => {
   return (
-    <div className="flex flex-col h-[85vh] w-screen flex-shrink-0 snap-center space-y-5 items-center justify-center p-16 xl:p-44">
+    <div className="flex flex-col w-screen flex-shrink-0 snap-center space-y-5 items-center justify-center px-10 pb-8 md:pb-0">
       <a href={linkToBuild} target="_blank" rel="noreferrer">
         <motion.img
           initial={{ y: -50, opacity: 0 }}
@@ -20,7 +20,7 @@ const Project = ({
           transition={{ duration: 1.5, ease: "easeOut" }}
           src={urlFor(image).url()}
           alt="project-image"
-          className="flex-shrink-0 object-cover h-40 md:h-52"
+          className="flex-shrink-0 object-cover w-[350px] sm:w-[450px]"
         />
       </a>
       <div className="space-y-6 px-0 flex flex-col items-center">

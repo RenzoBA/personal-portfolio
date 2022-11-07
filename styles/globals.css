@@ -29,11 +29,11 @@
 
   .section-title,
   .hero-button-text {
-    @apply text-[#f1f15d] animate-pulse font-semibold;
+    @apply text-[#f1d85d] animate-pulse font-semibold;
   }
 
   .decoration-element {
-    @apply decoration-[#f1f15d];
+    @apply decoration-[#f1d85d];
   }
 
   .bg-color-custom {
@@ -49,19 +49,19 @@
   }
 
   .animate-shape {
-    @apply absolute border-2 border-[#f1f15d] rounded-full;
+    @apply absolute border-2 border-[#f1d85d] rounded-full;
   }
 
   .header-icon {
-    @apply text-color-custom cursor-pointer sm:group-hover:text-[#f1f15d] sm:hover:text-[#f1f15d] transition-all h-7 w-7 md:h-8 md:w-8;
+    @apply text-color-custom cursor-pointer sm:group-hover:text-[#f1d85d] sm:hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
   }
 
   .contact-icon {
-    @apply text-[#f1f15d] h-7 w-7 animate-pulse;
+    @apply text-[#f1d85d] h-7 w-7 animate-pulse;
   }
 
   .scroll-color-custom {
-    @apply scrollbar-thin scrollbar-thumb-[#f1f15d];
+    @apply scrollbar-thin scrollbar-thumb-[#f1d85d];
   }
 
   .hero-button {
@@ -73,6 +73,6 @@
   }
 
   .contact-input {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-400/10 placeholder-gray-500 transition-all sm:hover:border-slate-400/40 focus:border-[#f1f15d] focus:text-[#f1f15d]/40;
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-400/10 placeholder-gray-500 transition-all sm:hover:border-slate-400/40 focus:border-[#f1d85d] focus:text-[#f1d85d]/40;
   }
 }

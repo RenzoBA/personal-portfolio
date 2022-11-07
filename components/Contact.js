@@ -6,8 +6,10 @@ import { FiMail, FiMapPin } from "react-icons/fi";
 
 const Contact = ({ pageInfo }) => {
   const { register, handleSubmit } = useForm();
-  //add onSubmit body
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (formData) => {
+    window.location.href = `mailto:renzobocanegra.contact@gmail.com?subject=${formData.subject}&body=Hi, I'm ${formData.name}. ${formData.message}. (${formData.email})`;
+  };
+
   return (
     <motion.div
       initial={{
@@ -69,7 +71,10 @@ const Contact = ({ pageInfo }) => {
             placeholder="Message"
             className="contact-input"
           />
-          <button className="bg-[#f1f15d] py-5 px-10 rounded-md text-black font-bold">
+          <button
+            type="submit"
+            className="bg-[#f1f15d] py-5 px-10 rounded-md text-black font-bold"
+          >
             Submit
           </button>
         </form>

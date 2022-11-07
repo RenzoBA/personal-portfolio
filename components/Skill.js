@@ -21,7 +21,7 @@ const Skill = ({ leftSide, skill: { title, progress, image } }) => {
           className="border border-gray-500 rounded-full object-cover filter group-hover:blur-[2px] group-hover:scale-125 group-hover:opacity-40 transition duration-300 ease-in-out p-1"
         />
         <div className="absolute opacity-0 flex flex-col items-center justify-center h-full group-hover:opacity-100 transition duration-300 ease-in-out">
-          <p className="relative top-0 text-4xl font-normal text-[#b0ff5d]">
+          <p className="relative top-0 text-4xl font-normal text-[#f1d85d]">
             {progress}
             <span className="text-lg">%</span>
           </p>

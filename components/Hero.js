@@ -46,8 +46,8 @@ const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
         <h2 className="text-xs sm:text-lg uppercase text-color-custom pb-2 tracking-[15px]">
           {role}
         </h2>
-        <h1 className="text-[#f1f15d] text-3xl sm:text-5xl lg:text-6xl font-semibold">
-          {text} <Cursor cursorColor="#f1f15d" />
+        <h1 className="text-[#f1d85d] text-3xl sm:text-5xl lg:text-6xl font-semibold">
+          {text} <Cursor cursorColor="#f1d85d" />
         </h1>
         <div className="pt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:gap-5 sm:flex">
           <Link href="#about">
