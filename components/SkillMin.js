@@ -9,6 +9,7 @@ const SkillMin = ({ technology }) => {
         src={urlFor(technology.image).url()}
         width={100}
         height={100}
+        alt={technology.title}
         className="rounded-full border border-gray-500 object-cover p-1"
       />
     </div>

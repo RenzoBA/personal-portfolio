@@ -5,7 +5,7 @@ import { BsGithub, BsLinkedin, BsDownload } from "react-icons/bs";
 
 const Header = ({ socials }) => {
   return (
-    <header className="fixed p-5 text-gray-500 text-2xl z-20 w-full">
+    <header className="fixed px-4 py-5 text-gray-500 text-2xl z-20 w-full">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

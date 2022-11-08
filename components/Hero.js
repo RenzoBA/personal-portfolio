@@ -1,55 +1,29 @@
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-//components
-import BackgroundShapes from "./BackgroundShapes";
-
-//sanity
-import { urlFor } from "../sanity";
-
-const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
-  const [text] = useTypewriter({
-    words: profileWords,
-    loop: true,
-    delaySpeed: 1500,
-  });
+const Developer = ({ pageInfo: { name, role } }) => {
   return (
-    <div className="relative top-8 flex flex-col h-screen justify-center items-center text-center space-y-6 sm:space-y-8 py-16 lg:py-0">
-      <BackgroundShapes />
-      {/* <div className="w-full absolute top-[24%] bg-color-custom-2 left-0 h-[500px] skew-y-12 z-0" />
-      <div className="w-full absolute top-[24%] bg-color-custom-2 left-0 h-[500px] -skew-y-12 -z-0" /> */}
-
-      <Image
-        className="rounded-full object-cover z-0"
-        src={urlFor(profilePhoto).url()}
-        alt="profile-photo"
-        width={120}
-        height={120}
-      />
+    <div className="relative flex flex-col h-screen justify-center items-center text-center">
       <motion.div
         initial={{
-          opacity: 0,
-          scale: 0.5,
+          x: -200,
         }}
         animate={{
-          opacity: 1,
-          scale: 1,
+          x: 0,
         }}
         transition={{
-          ease: "easeInOut",
-          duration: 0.5,
+          ease: "easeOut",
+          duration: 1,
         }}
-        className="z-10 flex flex-col items-center"
+        className="z-10 w-full flex flex-col items-start justify-end pl-3 sm:pl-5 md:pl-7 lg:pl-12 text-left"
       >
-        <h2 className="text-xs sm:text-lg uppercase text-color-custom pb-2 tracking-[15px]">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light">
+          Hello, I'm <span className="hero-button-text font-light">{name}</span>
+        </h1>
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl uppercase font-semibold text-color-custom pb-2 tracking-[15px]">
           {role}
         </h2>
-        <h1 className="text-[#f1d85d] text-3xl sm:text-5xl lg:text-6xl font-semibold">
-          {text} <Cursor cursorColor="#f1d85d" />
-        </h1>
-        <div className="pt-5 grid grid-cols-2 gap-x-5 gap-y-3 sm:gap-5 sm:flex">
+        <div className="pt-5 gap-5 sm:gap-16 flex">
           <Link href="#about">
             <button className="hero-button">About</button>
           </Link>
@@ -63,6 +37,24 @@ const Developer = ({ pageInfo: { role, profilePhoto, profileWords } }) => {
             <button className="hero-button">Contact</button>
           </Link>
         </div>
+      </motion.div>
+      <motion.div
+        initial={{
+          opacity: 0.4,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          ease: "easeOut",
+          duration: 1.5,
+          delay: 1,
+        }}
+        className="z-1 w-full"
+      >
+        <div class="bg-animated" />
+        <div class="bg-animated bg-animated-2" />
+        <div class="bg-animated bg-animated-3" />
       </motion.div>
     </div>
   );

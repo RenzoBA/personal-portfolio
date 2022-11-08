@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
-import { motion } from "framer-motion";
 
 //components
 import { Header, Hero, About, Skills, Projects, Contact } from "../components";
@@ -8,15 +6,12 @@ import { Header, Hero, About, Skills, Projects, Contact } from "../components";
 //sanity
 import { client } from "../sanity";
 
-//icons
-import { BsArrowUpCircle } from "react-icons/bs";
-
 export default function Home({ socials, pageInfo, skills, projects }) {
   return (
     <div className="relative bg-color-custom h-screen text-white md:snap-y md:snap-mandatory overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
       <Head>
         <title>Renzo Portfolio</title>
-        <meta name="description" content="This is my personal portfolio :D" />
+        <meta name="description" content="This is my personal portfolio" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
@@ -41,17 +36,6 @@ export default function Home({ socials, pageInfo, skills, projects }) {
       <section id="contact" className="snap-center">
         <Contact pageInfo={pageInfo[0]} />
       </section>
-
-      {/* <Link href="#developer">
-        <motion.div
-          initial={{ opacity: 0, x: 80 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 1.5, delay: 2 }}
-          className="fixed flex bottom-8 cursor-pointer rounded-full right-1 md:right-2 xl:right-10 z-50"
-        >
-          <BsArrowUpCircle className="header-icon" />
-        </motion.div>
-      </Link> */}
     </div>
   );
 }

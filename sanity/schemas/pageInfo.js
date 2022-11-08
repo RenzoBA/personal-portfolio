@@ -14,20 +14,6 @@ export default {
       type: "string",
     },
     {
-      name: "profilePhoto",
-      title: "Profile Photo",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-    },
-    {
-      name: "profileWords",
-      title: "Profile Words",
-      type: "array",
-      of: [{ type: "string" }],
-    },
-    {
       name: "aboutInformation",
       title: "About Information",
       type: "string",

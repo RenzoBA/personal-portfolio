@@ -25,7 +25,7 @@ const Contact = ({ pageInfo }) => {
         Contact
       </h3>
       <div className="flex flex-col space-y-10 mt-10">
-        <h4 className="text-4xl xl:text-5xl font-semibold">
+        <h4 className="text-4xl px-5 xl:text-5xl font-semibold">
           You found the right developer. <br className="md:hidden" />
           <span className="underline decoration-element">Lets Talk</span>.
         </h4>
@@ -73,7 +73,7 @@ const Contact = ({ pageInfo }) => {
           />
           <button
             type="submit"
-            className="bg-[#f1f15d] py-5 px-10 rounded-md text-black font-bold"
+            className="bg-[#f1d85d] py-5 px-10 rounded-md text-black font-bold"
           >
             Submit
           </button>

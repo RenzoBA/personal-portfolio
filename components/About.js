@@ -29,6 +29,7 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         src={urlFor(aboutPhoto).url()}
+        alt="developer"
         className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[350px] xl:h-[450px] m-10"
       />
       <div className="space-y-6 text-color-custom">

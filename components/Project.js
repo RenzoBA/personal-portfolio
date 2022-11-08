@@ -12,7 +12,7 @@ const Project = ({
   project: { title, summary, image, technologies, linkToBuild },
 }) => {
   return (
-    <div className="flex flex-col w-screen flex-shrink-0 snap-center space-y-5 items-center justify-center px-10 pb-8 md:pb-0">
+    <div className="flex flex-col w-screen flex-shrink-0 snap-center space-y-5 items-center justify-center px-10 pb-8 lg:pb-0">
       <a href={linkToBuild} target="_blank" rel="noreferrer">
         <motion.img
           initial={{ y: -50, opacity: 0 }}
