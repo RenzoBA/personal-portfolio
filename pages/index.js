@@ -8,14 +8,14 @@ import { client } from "../sanity";
 
 export default function Home({ socials, pageInfo, skills, projects }) {
   return (
-    <div className="relative bg-color-custom h-screen text-white md:snap-y md:snap-mandatory overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
+    <div className="relative bg-color-custom h-screen text-white overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
       <Head>
         <title>Renzo Portfolio</title>
         <meta name="description" content="This is my personal portfolio" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
-      <Header socials={socials} />
+      <Header socials={socials} pageInfo={pageInfo[0]} />
 
       <section id="developer" className="snap-center">
         <Hero pageInfo={pageInfo[0]} />

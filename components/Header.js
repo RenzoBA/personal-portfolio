@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 //icons
 import { BsGithub, BsLinkedin, BsDownload } from "react-icons/bs";
 
-const Header = ({ socials }) => {
+const Header = ({ socials, pageInfo: { cvUrl } }) => {
   return (
     <header className="fixed px-4 py-5 text-gray-500 text-2xl z-20 w-full">
       <motion.div
@@ -20,12 +20,17 @@ const Header = ({ socials }) => {
             <BsLinkedin className="header-icon" />
           </a>
         </div>
-        <button className="gap-2 flex ml-auto items-center group">
+        <a
+          className="gap-2 flex ml-auto items-center group"
+          href={cvUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsDownload className="header-icon" />
           <p className="hidden md:inline-flex items-center text-sm header-icon w-20">
             PDF version
           </p>
-        </button>
+        </a>
       </motion.div>
     </header>
   );

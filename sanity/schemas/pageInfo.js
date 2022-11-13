@@ -14,9 +14,14 @@ export default {
       type: "string",
     },
     {
+      name: "cvUrl",
+      title: "CV URL",
+      type: "url",
+    },
+    {
       name: "aboutInformation",
       title: "About Information",
-      type: "string",
+      type: "text",
     },
     {
       name: "aboutPhoto",

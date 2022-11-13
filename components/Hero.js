@@ -53,9 +53,9 @@ const Developer = ({ pageInfo: { name, role } }) => {
         }}
         className="z-1 w-full"
       >
-        <div class="bg-animated" />
-        <div class="bg-animated bg-animated-2" />
-        <div class="bg-animated bg-animated-3" />
+        <div className="bg-animated" />
+        <div className="bg-animated bg-animated-2" />
+        <div className="bg-animated bg-animated-3" />
       </motion.div>
     </div>
   );
