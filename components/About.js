@@ -37,7 +37,9 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
           Here is a <span className="underline decoration-element">little</span>{" "}
           background
         </h4>
-        <p className="text-base lg:text-lg xl:w-11/12">{aboutInformation}</p>
+        <p className="text-base lg:leading-relaxed lg:text-lg xl:w-11/12">
+          {aboutInformation}
+        </p>
       </div>
     </motion.div>
   );
