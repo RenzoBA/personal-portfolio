@@ -38,6 +38,18 @@
   animation-duration: 5s;
 }
 
+.hero-button::before {
+  content: "";
+  position: absolute;
+  left: 35%;
+  top: 60%;
+  width: 90%;
+  height: 30%;
+  transform: skew(-12deg) translateX(-50%);
+  background: #f1d85d7f;
+  z-index: -1;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(-25%);
@@ -94,7 +106,7 @@
   }
 
   .hero-button {
-    @apply uppercase text-base lg:text-xl tracking-widest text-[#f5f5f5] transition-all sm:hover:text-[#f1d85d];
+    @apply uppercase text-base lg:text-xl tracking-widest text-[#f5f5f5] transition-all sm:hover:text-[#f1d85d] relative;
   }
 
   .contact-info {

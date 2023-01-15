@@ -15,15 +15,15 @@ const Developer = ({ pageInfo: { name, role } }) => {
           ease: "easeOut",
           duration: 1,
         }}
-        className="z-10 w-full flex flex-col items-start justify-end pl-3 sm:pl-5 md:pl-7 lg:pl-12 text-left"
+        className="z-10 w-full flex flex-col items-center sm:items-start justify-end pl-3 sm:pl-5 md:pl-7 lg:pl-12 text-center sm:text-left"
       >
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[#f1d85d] animate-pulse">
           {name}
         </h1>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[84px] uppercase font-semibold text-color-custom pb-2 tracking-[15px]">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[84px] uppercase font-semibold text-color-custom pb-2 tracking-[10px] sm:tracking-[15px]">
           {role}
         </h2>
-        <div className="pt-5 gap-5 sm:gap-16 flex">
+        <div className="pt-5 gap-5 sm:gap-16 flex flex-col sm:flex-row">
           <Link href="#about">
             <button className="hero-button">About</button>
           </Link>

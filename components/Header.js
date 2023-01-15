@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 //icons
-import { BsGithub, BsLinkedin, BsTwitter, BsDownload } from "react-icons/bs";
+import { BsGithub, BsTwitter, BsDownload } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 
 const Header = ({ socials, pageInfo: { cvUrl } }) => {
   return (
-    <header className="fixed px-4 py-5 text-gray-500 text-2xl z-20 w-full">
+    <header className="fixed pr-4 pl-2 py-5 text-gray-500 text-2xl z-20 w-full">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
