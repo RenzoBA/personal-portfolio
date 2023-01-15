@@ -82,7 +82,7 @@
   }
 
   .header-icon {
-    @apply text-color-custom cursor-pointer sm:group-hover:text-[#f1d85d] sm:hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
+    @apply text-color-custom cursor-pointer sm:group-hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
   }
 
   .contact-icon {

@@ -43,22 +43,14 @@ const Contact = ({ pageInfo }) => {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-80 sm:w-fit mx-auto"
+          className="flex flex-col space-y-2 w-80 sm:w-[26rem] mx-auto"
         >
-          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-            <input
-              {...register("name", { required: true })}
-              type="text"
-              placeholder="Name*"
-              className="contact-input"
-            />
-            <input
-              {...register("email", { required: true })}
-              type="email"
-              placeholder="Email*"
-              className="contact-input"
-            />
-          </div>
+          <input
+            {...register("name", { required: true })}
+            type="text"
+            placeholder="Name*"
+            className="contact-input"
+          />
           <input
             {...register("subject", { required: true })}
             type="text"
@@ -73,9 +65,9 @@ const Contact = ({ pageInfo }) => {
           />
           <button
             type="submit"
-            className="bg-[#f1d85d] py-5 px-10 rounded-md text-black font-bold"
+            className="bg-[#f1d85d] hover:bg-[#e7d476] transition-colors py-5 px-10 rounded-md text-[#3c3c3c] font-bold"
           >
-            Submit
+            SUBMIT
           </button>
         </form>
       </div>

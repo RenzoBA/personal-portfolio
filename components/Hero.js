@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Developer = ({ pageInfo: { name, role } }) => {
   return (
-    <div className="relative flex flex-col h-screen justify-center items-center text-center">
+    <div className="relative flex flex-col h-screen justify-center items-center text-center ">
       <motion.div
         initial={{
           x: -200,
@@ -17,11 +17,10 @@ const Developer = ({ pageInfo: { name, role } }) => {
         }}
         className="z-10 w-full flex flex-col items-start justify-end pl-3 sm:pl-5 md:pl-7 lg:pl-12 text-left"
       >
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light">
-          Hello, I&apos;m{" "}
-          <span className="hero-button-text font-light">{name}</span>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-[#f1d85d] animate-pulse">
+          {name}
         </h1>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl uppercase font-semibold text-color-custom pb-2 tracking-[15px]">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[84px] uppercase font-semibold text-color-custom pb-2 tracking-[15px]">
           {role}
         </h2>
         <div className="pt-5 gap-5 sm:gap-16 flex">
