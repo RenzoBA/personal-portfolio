@@ -46,7 +46,7 @@ const Header = ({ socials, pageInfo: { cvUrl } }) => {
           rel="noreferrer"
         >
           <BsDownload className="header-icon" />
-          <p className="hidden md:inline-flex items-center text-sm header-icon w-20 ">
+          <p className="hidden md:inline-flex items-center text-sm header-icon w-20 font-medium">
             PDF version
           </p>
         </a>

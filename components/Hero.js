@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const Developer = ({ pageInfo: { name, role } }) => {
   return (
-    <div className="relative flex flex-col h-screen justify-center items-center text-center ">
+    <div className="relative flex flex-col h-screen justify-center items-center text-center">
       <motion.div
         initial={{
-          x: -200,
+          x: -400,
         }}
         animate={{
           x: 0,
