@@ -9,10 +9,15 @@ import { urlFor } from "../sanity";
 const Project = ({
   position,
   length,
+  currentProject,
   project: { title, summary, image, technologies, linkToBuild },
 }) => {
   return (
-    <div className="flex flex-col w-screen flex-shrink-0 snap-center space-y-5 items-center justify-center px-10 pb-8 lg:pb-0">
+    <div
+      className={`${
+        currentProject === position ? "flex" : "hidden"
+      } flex-col w-screen flex-shrink-0 snap-center space-y-5 items-center justify-center px-10 pb-8 lg:pb-0`}
+    >
       <a href={linkToBuild} target="_blank" rel="noreferrer">
         <motion.img
           initial={{ y: -50, opacity: 0 }}
@@ -23,10 +28,10 @@ const Project = ({
           className="flex-shrink-0 object-cover w-[350px] sm:w-[450px]"
         />
       </a>
-      <div className="space-y-6 px-0 flex flex-col items-center">
+      <div className="space-y-6 px-5 flex flex-col items-center">
         <div className="text-center">
           <h5 className="text-2xl underline decoration-element">
-            Project {position} of {length}
+            Project {position + 1} of {length}
             <br />
           </h5>{" "}
           <a href={linkToBuild} target="_blank" rel="noreferrer">
@@ -36,7 +41,7 @@ const Project = ({
           </a>
         </div>
         <p className="text-base lg:text-lg">{summary}</p>
-        <div className="flex gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
           {technologies.map((technology) => (
             <SkillMin key={technology._id} technology={technology} />
           ))}

@@ -94,7 +94,11 @@
   }
 
   .header-icon {
-    @apply text-color-custom cursor-pointer sm:group-hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
+    @apply text-color-custom md:group-hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
+  }
+
+  .arrow-icon {
+    @apply text-color-custom-2 md:hover:text-[#f1d85d] transition-all cursor-pointer h-8 w-8 md:h-10 md:w-10;
   }
 
   .contact-icon {
@@ -106,7 +110,7 @@
   }
 
   .hero-button {
-    @apply uppercase text-base lg:text-xl tracking-widest text-[#f5f5f5] transition-all sm:hover:text-[#f1d85d] relative;
+    @apply uppercase text-base lg:text-xl tracking-widest text-[#f5f5f5] transition-all md:hover:text-[#f1d85d] relative;
   }
 
   .contact-info {
@@ -114,6 +118,6 @@
   }
 
   .contact-input {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-400/10 placeholder-gray-500 transition-all sm:hover:border-slate-400/40 focus:border-[#f1d85d] focus:text-[#f1d85d]/40;
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-400/10 placeholder-gray-500 transition-all md:hover:border-slate-400/40 focus:border-[#f1d85d] focus:text-[#f1d85d]/40;
   }
 }

@@ -65,7 +65,7 @@ const Contact = ({ pageInfo }) => {
           />
           <button
             type="submit"
-            className="bg-[#f1d85d] hover:bg-[#e7d476] transition-colors py-5 px-10 rounded-md text-[#3c3c3c] font-bold"
+            className="bg-[#f1d85d] sm:hover:bg-[#e7d476] transition-colors py-5 px-10 rounded-md text-[#3c3c3c] font-bold"
           >
             SUBMIT
           </button>
