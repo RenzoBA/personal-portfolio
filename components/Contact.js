@@ -19,17 +19,17 @@ const Contact = ({ pageInfo }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col h-full md:h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center py-16 pb-20 md:py-0 text-color-custom"
+      className="relative flex flex-col min-h-screen justify-center items-center text-center text-color-custom pb-32 lg:pb-5"
     >
-      <h3 className="md:absolute top-16 uppercase tracking-[20px] section-title text-2xl md:text-3xl">
+      <h3 className="uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 mt-10">
+      <div className="pt-8 md:pt-10 flex flex-col gap-10">
         <h4 className="text-4xl px-5 xl:text-5xl font-semibold">
           You found the right developer. <br className="md:hidden" />
           <span className="underline decoration-element">Lets Talk</span>.
         </h4>
-        <div className="space-y-6">
+        <div className="flex flex-col gap-6">
           <div className="contact-info">
             <FiMail className="contact-icon" />
             <p className="text-xl sm:text-2xl select-element">
@@ -43,7 +43,7 @@ const Contact = ({ pageInfo }) => {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-80 sm:w-[26rem] mx-auto"
+          className="flex flex-col gap-2 w-80 sm:w-[26rem] mx-auto"
         >
           <input
             {...register("name", { required: true })}
@@ -65,7 +65,7 @@ const Contact = ({ pageInfo }) => {
           />
           <button
             type="submit"
-            className="bg-[#f1d85d] sm:hover:bg-[#e7d476] transition-colors py-5 px-10 rounded-md text-[#3c3c3c] font-bold"
+            className="bg-[#f1d85d] sm:hover:bg-[#e7d476] transition-colors py-5 rounded-md text-[#3c3c3c] font-bold"
           >
             SUBMIT
           </button>

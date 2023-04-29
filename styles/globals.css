@@ -78,15 +78,15 @@
   }
 
   .bg-color-custom {
-    @apply bg-[#3c3c3c];
+    @apply bg-[#2e3133];
   }
 
   .bg-color-custom-2 {
-    @apply bg-[#202020]/20;
+    @apply bg-[#2a2c2e];
   }
 
   .bg-skill-custom {
-    @apply bg-[#4f4f4f];
+    @apply bg-[#3c4143];
   }
 
   .animate-shape {
@@ -94,7 +94,11 @@
   }
 
   .header-icon {
-    @apply text-color-custom md:group-hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
+    @apply text-[#2e3133] md:group-hover:text-[#f1d85d] transition-all h-7 w-7 md:h-8 md:w-8;
+  }
+
+  .hero-icon {
+    @apply text-color-custom p-1 transition-all h-7 w-7 md:h-10 md:w-10;
   }
 
   .arrow-icon {

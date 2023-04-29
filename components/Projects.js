@@ -19,7 +19,7 @@ const Projects = ({ projects }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col h-full md:h-screen max-w-full mx-auto justify-center items-center text-center pt-28 pb-20 md:py-0 text-color-custom"
+      className="relative flex flex-col min-h-screen mx-auto justify-center items-center text-center text-color-custom pb-32 lg:pb-5"
     >
       <div className="w-full absolute top-[30%] bg-color-custom-2 left-0 h-[500px] -skew-y-12" />
       <button
@@ -28,7 +28,7 @@ const Projects = ({ projects }) => {
         }}
         className={`${
           currentPosition === projects.length - 1 && "hidden"
-        } absolute right-3 top-[50%] sm:top-1/2 md:right-10 z-20 py-5 pl-5 md:p-0 cursor-default`}
+        } absolute right-3 top-[40%] sm:top-1/2 md:right-10 z-20 py-5 pl-5 md:p-0 cursor-default`}
       >
         <BsArrowRightCircleFill className="arrow-icon" />
       </button>
@@ -38,19 +38,21 @@ const Projects = ({ projects }) => {
         }}
         className={`${
           currentPosition === 0 && "hidden"
-        } absolute left-4 top-[50%] sm:top-1/2 md:left-10 z-20 py-5 pr-5 md:p-0 cursor-default`}
+        } absolute left-4 top-[40%] sm:top-1/2 md:left-10 z-20 py-5 pr-5 md:p-0 cursor-default`}
       >
         <BsArrowLeftCircleFill className="arrow-icon" />
       </button>
-      <h3 className="md:absolute top-16 uppercase tracking-[20px] section-title text-2xl md:text-3xl">
-        Projects
-      </h3>
-      <h3 className="pt-6 uppercase tracking-[3px] text-color-custom-2 text-sm md:pt-[9.7rem] px-10">
-        <span className="md:hidden">Touch</span>
-        <span className="hidden md:inline-block">Click</span> the image or title
-        to visit the project
-      </h3>
-      <div className="pt-8 md:pt-0 w-full h-full flex z-10">
+      <div className="uppercase z-10 px-10">
+        <h3 className="tracking-[20px] section-title text-2xl md:text-3xl">
+          Projects
+        </h3>
+        <h3 className="pt-6 tracking-[3px] text-color-custom-2 text-sm">
+          <span className="md:hidden">Touch</span>
+          <span className="hidden md:inline-block">Click</span> the image or
+          title to visit the project
+        </h3>
+      </div>
+      <div className="pt-8 md:pt-10 w-full h-full flex z-10">
         {projects.map((project, i) => (
           <Project
             project={project}
