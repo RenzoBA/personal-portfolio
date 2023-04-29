@@ -13,7 +13,7 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col min-h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center lg:text-justify pb-32 lg:pb-5"
+      className="relative flex flex-col min-h-screen max-w-7xl mx-auto px-10 justify-center items-center text-center lg:text-justify mb-32 lg:mb-5 z-20"
     >
       <h3 className="uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         About

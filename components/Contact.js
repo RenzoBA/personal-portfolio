@@ -19,7 +19,7 @@ const Contact = ({ pageInfo }) => {
         opacity: 1,
       }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col min-h-screen justify-center items-center text-center text-color-custom pb-32 lg:pb-5"
+      className="relative flex flex-col min-h-screen justify-center items-center text-center text-color-custom mb-32 lg:mb-5"
     >
       <h3 className="uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         Contact
