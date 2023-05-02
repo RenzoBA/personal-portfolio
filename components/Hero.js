@@ -7,11 +7,11 @@ const Hero = ({ socials, pageInfo: { name, role } }) => {
     <div className="relative flex flex-col min-h-screen justify-center items-center text-center bg-color-custom-2 mb-32 lg:mb-5 z-20">
       <div className="absolute -bottom-24 md:-bottom-40 bg-color-custom-2 w-full h-96 -skew-y-12 shadow-lg -z-20" />
       <div className="z-10 w-full flex flex-col gap-10 items-center justify-end text-center">
-        <div className="relative w-full flex flex-col gap-1 justify-center py-10 bg-color-custom shadow">
+        <div className="relative w-full flex flex-col gap-2 justify-center py-10 bg-color-custom shadow">
           <h2 className="text-sm sm:text-base md:text-lg uppercase font-light text-color-custom-2 tracking-[10px] sm:tracking-[15px]">
             {role}
           </h2>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-color-custom drop-shadow-lg shadow-[#2a2c2e] uppercase">
+          <h1 className="text-[3.5rem] leading-none sm:text-6xl md:text-7xl lg:text-8xl font-black text-color-custom drop-shadow-lg shadow-[#2a2c2e] uppercase">
             {name}
           </h1>
         </div>
