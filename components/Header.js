@@ -6,14 +6,14 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 const Header = ({ socials, pageInfo: { cvUrl } }) => {
   return (
-    <header className="invisible md:visible fixed pr-6 pl-4 text-gray-500 text-2xl z-30 w-full">
+    <header className="invisible md:visible fixed pr-6 pl-4 text-2xl z-30 w-full">
       <motion.div
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeOut", duration: 1.2, delay: 0.7 }}
         className="flex flex-row items-start max-w-7xl mx-auto"
       >
-        <div className="flex flex-row gap-1 lg:gap-3 backdrop-blur bg-[#f5f5f5]/40 py-1 rounded-b shadow">
+        <div className="flex flex-row gap-1 lg:gap-3 backdrop-blur bg-[#202323]/40 py-1 rounded-b shadow">
           <a
             href={socials[0].url}
             target="_blank"
@@ -39,7 +39,7 @@ const Header = ({ socials, pageInfo: { cvUrl } }) => {
             <BsTwitter className="header-icon sm:hover:text-[#1da1f2]" />
           </a>
         </div>
-        <div className="flex ml-auto backdrop-blur bg-[#f5f5f5]/40 py-1 rounded-b shadow">
+        <div className="flex ml-auto backdrop-blur bg-[#202323]/40 py-1 rounded-b shadow">
           <a
             className="gap-2 p-2 h-10 flex justify-center items-center transition-colors group"
             href={cvUrl}

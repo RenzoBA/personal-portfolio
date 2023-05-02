@@ -11,7 +11,7 @@ const Hero = ({ socials, pageInfo: { name, role } }) => {
           <h2 className="text-sm sm:text-base md:text-lg uppercase font-light text-color-custom-2 tracking-[8px] sm:tracking-[15px]">
             {role}
           </h2>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-[#2e3133] drop-shadow-lg shadow-[#2a2c2e] uppercase">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-color-custom drop-shadow-lg shadow-[#2a2c2e] uppercase">
             {name}
           </h1>
         </div>
