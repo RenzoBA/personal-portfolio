@@ -10,8 +10,8 @@ export default function Home({ socials, pageInfo, skills, projects }) {
   return (
     <div className="relative bg-color-custom h-screen text-white overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
       <Head>
-        <title>Renzo Portfolio</title>
-        <meta name="description" content="This is my personal portfolio" />
+        <title>Renzo Bocanegra Portfolio</title>
+        <meta name="description" content="renzo bocanegra portfolio" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
