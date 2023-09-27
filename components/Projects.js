@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Project from "./Project";
 
 //icons
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { HiArrowCircleRight, HiArrowCircleLeft } from "react-icons/hi";
 import { useState } from "react";
 
 const Projects = ({ projects }) => {
@@ -30,7 +30,7 @@ const Projects = ({ projects }) => {
           currentPosition === projects.length - 1 && "hidden"
         } absolute right-3 top-[40%] sm:top-1/2 md:right-10 z-20 py-5 pl-5 md:p-0 cursor-default`}
       >
-        <BsArrowRightCircleFill className="arrow-icon" />
+        <HiArrowCircleRight className="arrow-icon" />
       </button>
       <button
         onClick={() => {
@@ -40,7 +40,7 @@ const Projects = ({ projects }) => {
           currentPosition === 0 && "hidden"
         } absolute left-4 top-[40%] sm:top-1/2 md:left-10 z-20 py-5 pr-5 md:p-0 cursor-default`}
       >
-        <BsArrowLeftCircleFill className="arrow-icon" />
+        <HiArrowCircleLeft className="arrow-icon" />
       </button>
       <div className="uppercase z-10 px-10">
         <h3 className="tracking-[20px] section-title text-2xl md:text-3xl">

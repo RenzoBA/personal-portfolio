@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 //icons
-import { BsGithub, BsTwitter, BsFileEarmarkPdfFill } from "react-icons/bs";
+import { BsGithub, BsTwitter } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 
 const Header = ({ socials, pageInfo: { cvUrl } }) => {

@@ -30,7 +30,7 @@ const Project = ({
       </a>
       <div className="space-y-6 px-5 flex flex-col items-center">
         <div className="text-center">
-          <h5 className="text-2xl underline decoration-element">
+          <h5 className="text-2xl underline decoration-element font-thin">
             Project {position + 1} of {length}
             <br />
           </h5>{" "}
@@ -40,7 +40,7 @@ const Project = ({
             </h4>
           </a>
         </div>
-        <p className="text-base lg:text-lg">{summary}</p>
+        <p className="text-base lg:text-lg font-thin">{summary}</p>
         <div className="flex flex-wrap justify-center gap-5">
           {technologies.map((technology) => (
             <SkillMin key={technology._id} technology={technology} />

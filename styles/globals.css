@@ -53,7 +53,7 @@
   }
 
   .hero-icon {
-    @apply text-color-custom-2 h-10 w-10;
+    @apply h-10 w-10;
   }
 
   .arrow-icon {
@@ -77,6 +77,6 @@
   }
 
   .contact-input {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-slate-400/10 placeholder-gray-500 transition-all md:hover:border-slate-400/40 focus:border-[#f1d85d] focus:text-[#f1d85d]/40;
+    @apply outline-none bg-zinc-600 rounded-md px-6 py-4 placeholder-gray-500 focus:text-[#f1d85d];
   }
 }

@@ -34,12 +34,12 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
           className="w-56 h-56 rounded-full object-cover lg:rounded-lg lg:w-64 lg:h-96 xl:w-[350px] xl:h-[450px] m-10"
         />
         <div className="space-y-6 text-color-custom">
-          <h4 className="text-4xl xl:text-5xl font-semibold">
+          <h4 className="text-4xl xl:text-5xl font-medium">
             Here is a{" "}
             <span className="underline decoration-element">little</span>{" "}
             background
           </h4>
-          <p className="text-base lg:leading-loose lg:text-lg xl:w-11/12 px-1 sm:px-0">
+          <p className="text-base lg:leading-loose lg:text-lg xl:w-11/12 px-1 sm:px-0 font-thin">
             {aboutInformation}
           </p>
         </div>

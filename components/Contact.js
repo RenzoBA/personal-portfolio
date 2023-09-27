@@ -21,10 +21,11 @@ const Contact = ({ pageInfo }) => {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col min-h-screen justify-center items-center text-center text-color-custom mb-20 lg:mb-5"
     >
+      <div className="absolute top-80 md:-bottom-40 bg-color-custom-2 w-full h-[600px] skew-y-12 shadow-lg z-0" />
       <h3 className="uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         Contact
       </h3>
-      <div className="pt-8 md:pt-10 flex flex-col gap-10">
+      <div className="pt-8 md:pt-10 flex flex-col gap-10 z-10">
         <h4 className="text-4xl px-5 xl:text-5xl font-semibold">
           You found the right developer. <br className="md:hidden" />
           <span className="underline decoration-element">Lets Talk</span>.
@@ -32,13 +33,13 @@ const Contact = ({ pageInfo }) => {
         <div className="flex flex-col gap-6">
           <div className="contact-info">
             <FiMail className="contact-icon" />
-            <p className="text-xl sm:text-2xl select-element">
+            <p className="text-xl sm:text-2xl select-element font-thin">
               {pageInfo.email}
             </p>
           </div>
           <div className="contact-info">
             <FiMapPin className="contact-icon" />
-            <p className="text-xl sm:text-2xl">{pageInfo.address}</p>
+            <p className="text-xl sm:text-2xl font-thin">{pageInfo.address}</p>
           </div>
         </div>
         <form
