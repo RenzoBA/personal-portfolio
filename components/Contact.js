@@ -21,7 +21,7 @@ const Contact = ({ pageInfo }) => {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col min-h-screen justify-center items-center text-center text-color-custom mb-20 lg:mb-5"
     >
-      <div className="absolute top-80 md:-bottom-40 bg-color-custom-2 w-full h-[600px] skew-y-12 shadow-lg z-0" />
+      <div className="absolute top-80 md:top-20 bg-color-custom-2 w-full h-[600px] skew-y-12 shadow-lg z-0" />
       <h3 className="uppercase tracking-[20px] section-title text-2xl md:text-3xl">
         Contact
       </h3>

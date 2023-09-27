@@ -8,7 +8,7 @@ import { client } from "../sanity";
 
 export default function Home({ socials, pageInfo, skills, projects }) {
   return (
-    <div className="relative bg-zinc-700 h-screen overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
+    <div className="relative bg-zinc-800 h-screen overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
       <Head>
         <title>Renzo Bocanegra Portfolio</title>
         <meta
