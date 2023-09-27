@@ -15,7 +15,7 @@ const Skills = ({ skills }) => {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col min-h-screen mx-auto px-10 justify-center items-center text-center mb-32 lg:mb-5"
     >
-      <div className="w-full absolute top-[20%] bg-color-custom-2 left-0 h-[500px] skew-y-12 shadow" />
+      <div className="w-full absolute top-[20%] bg-color-custom-2 left-0 h-[500px] skew-y-12 shadow-lg" />
       <div className="uppercase z-10">
         <h3 className="tracking-[20px] section-title text-2xl md:text-3xl">
           Skills

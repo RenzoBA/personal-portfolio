@@ -21,7 +21,7 @@ const Projects = ({ projects }) => {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col min-h-screen mx-auto justify-center items-center text-center text-color-custom mb-32 lg:mb-5"
     >
-      <div className="w-full absolute top-[30%] bg-color-custom-2 left-0 h-[500px] -skew-y-12 shadow" />
+      <div className="w-full absolute top-[30%] bg-color-custom-2 left-0 h-[500px] -skew-y-12 shadow-lg" />
       <button
         onClick={() => {
           setCurrentPoition(currentPosition + 1);

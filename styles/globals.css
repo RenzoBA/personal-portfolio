@@ -52,12 +52,8 @@
     @apply absolute border-2 border-[#f1d85d] rounded-full;
   }
 
-  .header-icon {
-    @apply text-color-custom md:group-hover:text-[#f1d85d] transition-all;
-  }
-
   .hero-icon {
-    @apply text-color-custom p-1 transition-all h-7 w-7 md:h-10 md:w-10;
+    @apply text-color-custom-2 h-10 w-10;
   }
 
   .arrow-icon {

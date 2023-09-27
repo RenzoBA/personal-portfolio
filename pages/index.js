@@ -8,32 +8,35 @@ import { client } from "../sanity";
 
 export default function Home({ socials, pageInfo, skills, projects }) {
   return (
-    <div className="relative bg-color-custom h-screen text-white overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
+    <div className="relative bg-color-custom h-screen overflow-y-scroll overflow-x-hidden scroll-color-custom cursor-default">
       <Head>
         <title>Renzo Bocanegra Portfolio</title>
-        <meta name="description" content="renzo bocanegra portfolio" />
+        <meta
+          name="description"
+          content="renzo bocanegra software developer portfolio"
+        />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
-      <Header socials={socials} pageInfo={pageInfo[0]} />
+      {/* <Header socials={socials} pageInfo={pageInfo[0]} /> */}
 
-      <section id="developer" className="snap-center">
+      <section id="developer">
         <Hero socials={socials} pageInfo={pageInfo[0]} />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about">
         <About pageInfo={pageInfo[0]} />
       </section>
 
-      <section id="skills" className="snap-center">
+      <section id="skills">
         <Skills skills={skills} />
       </section>
 
-      <section id="projects" className="snap-center">
+      <section id="projects">
         <Projects projects={projects} />
       </section>
 
-      <section id="contact" className="snap-center">
+      <section id="contact">
         <Contact pageInfo={pageInfo[0]} />
       </section>
     </div>

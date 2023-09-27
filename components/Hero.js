@@ -4,18 +4,19 @@ import { GrLinkedinOption } from "react-icons/gr";
 
 const Hero = ({ socials, pageInfo: { name, role } }) => {
   return (
-    <div className="relative flex flex-col min-h-screen justify-center items-center text-center bg-color-custom-2 mb-32 lg:mb-5 z-20">
-      <div className="absolute -bottom-24 md:-bottom-40 bg-color-custom-2 w-full h-96 -skew-y-12 shadow-lg -z-20" />
-      <div className="z-10 w-full flex flex-col gap-10 items-center justify-end text-center">
-        <div className="relative w-full flex flex-col gap-2 justify-center py-10 bg-color-custom shadow">
-          <h2 className="text-sm sm:text-base md:text-lg uppercase font-light text-color-custom-2 tracking-[10px] sm:tracking-[15px]">
+    <div className="relative min-h-screen bg-color-custom">
+      <div className="absolute -bottom-24 md:-bottom-40 bg-color-custom-2 w-full h-96 -skew-y-12 shadow-lg z-0" />
+      <div className="absolute top-20 md:top-5 bg-color-custom-2 w-full h-96 skew-y-12 shadow-lg z-0" />
+      <div className="space-y-10 min-h-screen flex flex-col justify-center items-center">
+        <div className="text-center w-full space-y-2 uppercase z-10">
+          <h2 className="text-sm sm:text-base md:text-lg font-light text-color-custom-2 tracking-[15px]">
             {role}
           </h2>
-          <h1 className="text-[3.5rem] leading-none sm:text-6xl md:text-7xl lg:text-8xl font-black text-color-custom drop-shadow-lg shadow-[#2a2c2e] uppercase">
+          <h1 className="leading-none text-6xl sm:text-7xl md:text-8xl font-black text-color-custom">
             {name}
           </h1>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="space-y-10 z-10">
           <motion.a
             initial={{
               opacity: 0,
@@ -27,20 +28,22 @@ const Hero = ({ socials, pageInfo: { name, role } }) => {
             }}
             transition={{
               ease: "easeOut",
-              delay: 1.5,
+              delay: 1.2,
               duration: 1,
             }}
             href={socials[0].url}
             target="_blank"
             rel="noreferrer"
-            className="group flex flex-row justify-start items-center gap-3 transition-colors text-start"
+            className="group flex flex-row justify-start items-center gap-3 text-start text-color-custom-2 w-fit mr-auto"
           >
-            <div className="rounded-full sm:group-hover:bg-[#0d1116] flex justify-center items-center transition-colors">
-              <BsGithub className="hero-icon" />
-            </div>
+            <BsGithub className="hero-icon group-hover:text-color-custom transition-all" />
             <div>
-              <h3 className="text-lg">{socials[0].title}</h3>
-              <p className="text-xs text-color-custom-2">{socials[0].url}</p>
+              <h3 className="text-xl md:text-2xl group-hover:text-color-custom transition-all">
+                {socials[0].title}
+              </h3>
+              <p className="text-sm w-40 truncate md:w-full">
+                {socials[0].url.slice(8)}
+              </p>
             </div>
           </motion.a>
           <motion.a
@@ -54,20 +57,22 @@ const Hero = ({ socials, pageInfo: { name, role } }) => {
             }}
             transition={{
               ease: "easeOut",
-              delay: 2,
+              delay: 1.7,
               duration: 1,
             }}
             href={socials[1].url}
             target="_blank"
             rel="noreferrer"
-            className="group flex flex-row justify-start items-center gap-3 transition-colors text-start"
+            className="group flex flex-row justify-start items-center gap-3 text-start text-color-custom-2 w-fit mr-auto"
           >
-            <div className="rounded-full sm:group-hover:bg-[#0077b5] flex justify-center items-center transition-colors">
-              <GrLinkedinOption className="hero-icon" />
-            </div>
+            <GrLinkedinOption className="hero-icon group-hover:text-color-custom transition-all" />
             <div>
-              <h3 className="text-lg">{socials[1].title}</h3>
-              <p className="text-xs text-color-custom-2">{socials[1].url}</p>
+              <h3 className="text-xl md:text-2xl group-hover:text-color-custom transition-all">
+                {socials[1].title}
+              </h3>
+              <p className="text-sm w-40 truncate md:w-full">
+                {socials[1].url.slice(12)}
+              </p>
             </div>
           </motion.a>
           <motion.a
@@ -81,20 +86,22 @@ const Hero = ({ socials, pageInfo: { name, role } }) => {
             }}
             transition={{
               ease: "easeOut",
-              delay: 2.5,
+              delay: 2.2,
               duration: 1,
             }}
             href={socials[2].url}
             target="_blank"
             rel="noreferrer"
-            className="group flex flex-row justify-start items-center gap-3 transition-colors text-start"
+            className="group flex flex-row justify-start items-center gap-3 text-start text-color-custom-2 w-fit mr-auto"
           >
-            <div className="rounded-full sm:group-hover:bg-[#1da1f2] flex justify-center items-center transition-colors">
-              <BsTwitter className="hero-icon" />
-            </div>
+            <BsTwitter className="hero-icon group-hover:text-color-custom transition-all" />
             <div>
-              <h3 className="text-lg">{socials[2].title}</h3>
-              <p className="text-xs text-color-custom-2">{socials[2].url}</p>
+              <h3 className="text-xl md:text-2xl group-hover:text-color-custom transition-all">
+                {socials[2].title}
+              </h3>
+              <p className="text-sm w-40 truncate md:w-full">
+                {socials[2].url.slice(8)}
+              </p>
             </div>
           </motion.a>
         </div>
