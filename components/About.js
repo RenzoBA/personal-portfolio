@@ -31,7 +31,7 @@ const About = ({ pageInfo: { aboutPhoto, aboutInformation } }) => {
           viewport={{ once: true }}
           src={urlFor(aboutPhoto).url()}
           alt="developer"
-          className="w-56 h-56 rounded-full object-cover lg:rounded-lg lg:w-64 lg:h-96 xl:w-[350px] xl:h-[450px] m-10"
+          className="w-56 h-56 rounded-full object-cover lg:rounded-lg lg:w-64 lg:h-96 xl:w-[350px] xl:h-[450px] m-10 shadow-lg shadow-[#202020]"
         />
         <div className="space-y-6 text-color-custom">
           <h4 className="text-4xl xl:text-5xl font-medium">
