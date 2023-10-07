@@ -26,7 +26,7 @@ const Skills = ({ skills }) => {
           see currently proficiency
         </h3>
       </div>
-      <div className="pt-8 -mx-8 md:pt-10 flex sm:grid sm:grid-cols-6 flex-wrap items-center justify-center gap-4 sm:gap-5 text-color-custom">
+      <div className="pt-8 -mx-6 md:pt-10 flex sm:grid sm:grid-cols-6 flex-wrap items-center justify-center gap-4 sm:gap-5 text-color-custom">
         {skills.slice(0, skills.length / 2).map((skill) => (
           <Skill key={skill._id} skill={skill} leftSide />
         ))}

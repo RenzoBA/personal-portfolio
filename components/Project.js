@@ -41,7 +41,7 @@ const Project = ({
           </a>
         </div>
         <p className="text-base lg:text-lg font-thin">{summary}</p>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center -mx-8 gap-4 sm:gap-5">
           {technologies.map((technology) => (
             <SkillMin key={technology._id} technology={technology} />
           ))}
